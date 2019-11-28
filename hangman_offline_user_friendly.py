@@ -101,9 +101,8 @@ class LogicHangman:
             print()
 
 
-def push_hangman():
+def push_hangman(path):
     # Block for initialize class Hangman
-    path = r'/home/vshturkhal/PycharmProjects/eco/WordsStockRus.txt'
     miss = mistakes_for_hangman()
     example_hangman = PartsOfHangman(path)
 
@@ -124,4 +123,5 @@ def mistakes_for_hangman() -> int:
 
 
 if __name__ == '__main__':
-    push_hangman()
+    example_path = r'/home/WordsStockRus.txt'
+    push_hangman(example_path)
